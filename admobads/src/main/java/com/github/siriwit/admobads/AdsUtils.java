@@ -1,4 +1,4 @@
-package com.github.admob.admobads;
+package com.github.siriwit.admobads;
 
 import android.app.Activity;
 import android.content.Context;

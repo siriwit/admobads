@@ -1,4 +1,4 @@
-package com.github.admob.admobads;
+package com.github.siriwit.admobads;
 
 import androidx.appcompat.app.AppCompatActivity;
 
