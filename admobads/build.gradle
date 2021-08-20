@@ -40,12 +40,9 @@ repositories {
 }
 
 dependencies {
-
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'com.google.android.gms:play-services-ads:19.7.0'
-    implementation 'androidx.lifecycle:lifecycle-process:2.3.1'
-
 }
 
 afterEvaluate {
@@ -53,9 +50,9 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.siriwit.admob'
+                groupId = 'com.github.siriwit'
                 artifactId = 'admobads'
-                version = '1.0.3'
+                version = '1.0.4'
             }
         }
     }

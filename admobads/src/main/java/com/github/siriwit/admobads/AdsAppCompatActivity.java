@@ -1,13 +1,13 @@
-package com.siriwit.admob.admobads;
+package com.github.admob.admobads;
 
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 
-public class AdsFragment extends Fragment implements InterstitialAdDelegate {
+public class AdsAppCompatActivity extends AppCompatActivity implements InterstitialAdDelegate {
     protected InterstitialAd mInterstitialAd;
-    private OnDismissedAdDelegate onDismissedAdDelegate = () -> { };
+    protected OnDismissedAdDelegate onDismissedAdDelegate = () -> { };
 
     protected void loadBannerAds(AdView adView) {
         if (AdsUtils.shouldShowBanner) {
@@ -16,12 +16,12 @@ public class AdsFragment extends Fragment implements InterstitialAdDelegate {
     }
 
     protected void loadInterstitialAd(String interstitialAdId) {
-        AdsUtils.loadInterstititalAd(getActivity(), this, interstitialAdId);
+        AdsUtils.loadInterstititalAd(this, this, interstitialAdId);
     }
 
     protected void tryShowInterstitialAd(String interstitialAdId, OnDismissedAdDelegate onDismissedAdDelegate) {
         this.onDismissedAdDelegate = onDismissedAdDelegate;
-        AdsUtils.showInterstitialAd(getActivity(), mInterstitialAd, this, interstitialAdId, onDismissedAdDelegate);
+        AdsUtils.showInterstitialAd(this, mInterstitialAd, this, interstitialAdId, onDismissedAdDelegate);
     }
 
     @Override

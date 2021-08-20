@@ -1,4 +1,4 @@
-package com.siriwit.admob.admobads;
+package com.github.admob.admobads;
 
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 

@@ -1,4 +1,4 @@
-package com.siriwit.admob.example;
+package com.github.admob.example;
 
 import android.content.Context;
 
