@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AdmobAdsExample</string>
+    <string name="sample_appId">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="sample_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="sample_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="sample_appopen">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="show_interstitial_ad">Show Interstitial Ad</string>
 </resources>
